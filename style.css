@@ -265,6 +265,10 @@ body{
         .BannerImg::after {
             right: 11.15rem;
         }
+        
+        .heroLeft div:first-child{
+            flex: 1 0 49%;
+        }
 
     }
 
