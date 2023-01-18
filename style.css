@@ -1059,12 +1059,12 @@ body{
 /* Footer Section */
 
     .footerSection{
-        padding: 2rem 3rem;
         background-image: url(images/footerBG.png);
         background-size: cover;
     }
 
     .footerColWrapper{
+        padding: 2rem 3rem;
         display: grid;
         grid-template-columns: 1.25fr 1fr 1fr 1fr;
         grid-column-gap: 1rem;
@@ -1112,7 +1112,6 @@ body{
 
     .quickLinkList li{
         cursor: pointer;
-
     }
 
     .callFlex{
@@ -1164,10 +1163,6 @@ body{
     }
 
     @media (max-width:767px) {
-        .footerSection{
-        padding: 2rem;
-        }
-
         .footerColWrapper{
             padding-top: 2rem;
             grid-template-columns: 1fr;
@@ -1180,6 +1175,15 @@ body{
         .numbers{
             padding-left: 2rem;
         }
+        
+        .footerCopyRight{
+            padding: 0.85rem 1rem;
+        }
+
+        .footerCopyRight p{
+            font-size: 0.8rem;
+        }
+            
     }
 
     
@@ -1261,6 +1265,30 @@ body{
         background-size: 100%;
         transform: rotate(-2deg);
         }
+
+        @media (max-width:990px) {
+            .servicesBody .bannerWrapper{
+                height: inherit;
+            }
+
+            .servicesBody .heroLeft{
+                padding: 1rem 4rem;
+            }
+
+            .servicesBody .heroLeft p{
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px){
+            .servicesBody .bannerWrapper{
+                height: inherit;
+            }
+
+            .servicesBody .heroLeft{
+                padding: 1rem 2rem;
+            }
+        }
     /* Banner section */
 
     /* Services Section */
@@ -1313,5 +1341,36 @@ body{
             padding-top: 4rem;
             margin: 0 7rem;
         }
+
+        @media (max-width:990px) {
+            .serviceMain{
+                padding: 2rem;
+            }
+
+            .servicesBody .serviceRow{
+                margin: 0;
+            }
+
+            .serviceMain>h4::before{
+                left: 17%;
+            }
+        }
+
+        @media(max-width:767px){
+            .serviceMain{
+                padding: 2rem;
+                text-align: left;
+            }
+
+            .serviceMain>p{
+                width: 100%;
+            }
+
+            .servicesBody .serviceRow{
+                margin: 0;
+            }
+        }
     /* Services Section */
+
+    
 /* Services Page Ends */
