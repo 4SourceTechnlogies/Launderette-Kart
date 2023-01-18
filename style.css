@@ -1306,16 +1306,6 @@ body{
             .servicesBody .heroLeft{
                 padding: 1rem 2rem;
             }
-            
-            .servicesBody .heroLeft p{
-                width: 100%;
-            
-            .servicesBody .heroLeft span::before{
-                height: 100%;
-                width: 70%;
-                left: -8.5%;
-                top: -6%
-            }
         }
     /* Banner section */
 
@@ -1399,6 +1389,4 @@ body{
             }
         }
     /* Services Section */
-
-    
 /* Services Page Ends */
