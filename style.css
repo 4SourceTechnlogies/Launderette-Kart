@@ -746,6 +746,10 @@ body{
         opacity: 14%;
     }
 
+    .serviceRow .card:hover .card-image{
+        opacity: 14%;
+    }
+
     .serviceRow .card:hover .serviceBrief{
         display: block;
         opacity: 1;
@@ -1125,6 +1129,20 @@ body{
         font-size: 1rem;
     }
 
+    .footerCopyRight {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+        background-color: #f8c205;
+        align-items: center;
+        font-family: 'Montserrat';
+    }
+
+    .footerCopyRight p{
+        font-weight: 500;
+        margin: 0;
+    }
+
     @media (max-width:990px) {
         .footerIntro {
             grid-column: 1/5;
@@ -1166,3 +1184,133 @@ body{
     
     
 /* Footer section */
+
+/* Sevices Page */
+    /* Banner Section */
+        .servicesBody .header{
+            display: grid;
+            grid-column-end: 4;
+            padding-inline: 4rem;
+        }
+
+        .servicesBody .headerBottom{
+            margin-left: 7rem;
+        }
+
+        .servicesBody .dNav{
+            grid-column: 2/5;
+        }
+
+        .servicesBody .headerTopRight{
+            margin-left: 33%;
+        }
+
+        .headerTRR{
+            font-family: 'Montserrat', 'Sans serif';
+            font-size: 0.9rem;
+            color: #aa2d2f;
+        }
+
+        .headerTRR a{
+            text-decoration: none;
+            color: inherit;
+            opacity: 0.8;
+        }
+
+        .headerTRR a:hover{
+            opacity: 1  ;
+        }
+
+        .headerTRR a:visited{
+            color: #aa2d2f;
+            opacity: 1;
+        }
+
+        .servicesBody .bannerWrapper{
+            background: url(images/serviceBannerBG.png);
+            background-size: cover;
+            height: 99.75vh;
+        }
+
+        .servicesBody .heroLeft {
+            display: block;
+            padding-left: 0;
+            grid-column: 1/4;
+            padding: 1rem 10rem;;
+        }
+
+        .servicesBody .heroLeft p{
+            font-size: 1.rem;
+        }
+
+        .servicesBody .heroLeft span{
+            color: inherit;
+            font-size: 4rem;
+        }
+
+        .servicesBody .heroLeft span::before{
+        content: "";
+        position: absolute;
+        top: -27%;
+        left: -20.5%;
+        z-index: -1;
+        background: url(images/textbackground.png);
+        height: 140%;
+        width: 134%;
+        background-size: 100%;
+        transform: rotate(-2deg);
+        }
+    /* Banner section */
+
+    /* Services Section */
+        .serviceMain{
+            padding: 2rem 4rem;
+            text-align: center;
+        }
+
+        .serviceMain>h1{
+            margin-bottom: 2rem;
+            color: #aa2d2f;
+        }
+
+        .serviceMain>h4{
+            position: relative;
+        }
+
+        .serviceMain>h4::before{
+            content: "";
+            position: absolute;
+            width: 12.5%;
+            left: 27%;
+            height: 3px;
+            top: 2.2rem;
+            background: #f8c205;
+            transform: translate(50%, -50%);
+        }
+
+        .serviceMain>p{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 1rem;
+        }
+        
+        .servicesBody .card-img-top{
+            position: relative;
+        }
+
+        .serviceCardSide{
+            position: absolute;
+            top: 8%;
+        }
+
+        .serviceRow .card .yellowRect{
+            height: 5rem;
+        }
+
+        .servicesBody .serviceRow{
+            row-gap: 1rem;
+            padding-top: 4rem;
+            margin: 0 7rem;
+        }
+    /* Services Section */
+/* Services Page Ends */
