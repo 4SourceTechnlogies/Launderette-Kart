@@ -273,6 +273,23 @@ body{
 
     }
 
+    @media (min-width: 1480px{
+        .heroLeft div:first-child{
+            flex: 1 0 46%;
+        }
+        
+        .BannerImg::before{
+            width: 19.5%;
+            right: 17.15rem;
+        }
+        
+        .BannerImg::after{
+            right:12.5rem;
+            top:31.5%;
+            height: 70%;
+        }
+    }
+
     @media (max-width:990px) {
         .heroRight {
             display: none;
