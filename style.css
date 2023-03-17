@@ -169,7 +169,7 @@ body{
         display: block;
     } */
 
-    .heroLeft{
+    .heroLeft {
         grid-column: 1/4;
         grid-row-start: 2;
         padding: 4rem;
@@ -178,9 +178,8 @@ body{
         display: flex;
     }
 
-    .heroLeft div:first-child{
-        margin-top: 2rem;
-        padding-bottom: 9rem;
+    .heroLeft div:first-child {
+        flex: 1 0 50%;
     }
 
     .heroLeft span{
@@ -200,261 +199,282 @@ body{
         transform: rotate(2deg);
     }
 
-    .heroLeft div:first-child{
-        flex: 1 0 50%;
-    }
-
-    .BannerImg{
-        position: relative;
-    }
-
-   .bannerImgWrapper::before{
-    border-right: 2px solid white;
-    height: 67.5%;
-    margin-bottom: auto;
-    content: '';
-    display: block;
-    left: 26rem;
-    top: -0.8rem;
-    position: absolute;
-   }
-
-   .bannerImgWrapper::after{
-    content: '';
-    border-top: 2px solid white;
-    width: 31.5%;
-    display: block;
-    position: absolute;
-    left: 17.3rem;
-    top: -0.8rem;
-   }
-
-   .bannerImgWrapper{
-    width: 70%;
-    position: relative;
-   }
-
-    .BannerImg img{
-        width: 90%;
-    }
-
-    .playBtn{
-        position: absolute;
-        top: 38%;
-        left: 33%;
-        transform: translate(-50%, -50%);
-    }
-
-    .heroLeft h2{
-        width: 100%;
-        line-height: 1.5;
-    }
-
-    .heroLeft p{
-        width: 50%;
-    }
-
-    .heroRight{
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column: 3;
-    }
-
-    .heroRight img{
-        width: 100%;
-        height: 70%;
-    }
-
-    @media(min-width:1900px){
-        .bannerImgWrapper::before{
-            height: 63.25%;
-            left: 95%;
-            height: 62.5%;
-            top: -1.5rem;
-        }
-
-        .bannerImgWrapper::after{
-            width: 40.5%;
-            left: 55%;
-            top: -1.5rem;
-        }
-    }
-
-    @media (min-width: 1520px) and (max-width:1899px) {
-        .bannerImgWrapper::before {
-            height: 60.4%;
-            left: 95%;
-            top: -1.25rem;
-        }
-
-        .bannerImgWrapper::after {
-            top: -1.25rem;
-            left: 62%;
-            width: 33%;
-        }
-    }
-
-    @media (min-width:1440px) and (max-width:1520px) {
-        .bannerImgWrapper::before {
-            width: 9.5%;
-            height: 59.45%;
-            top: -1.25rem;
-            left: 25rem;
-        }
-
-        .bannerImgWrapper::after {
-            left: 18.5rem;
-            top: -1.25rem;
-        }
-    }
-
-    @media (min-width: 1440px) {
         .heroLeft div:first-child {
+            flex: 1 0 50%;
+        }
+    
+        .BannerImg {
+            position: relative;
+            flex: 0 1 50%;
+        }
+    
+        .BannerImg img {
+            width: 90%;
+        }
+    
+        .BannerImg img {
+            max-width: 100%;
+        }
+    
+        .bannerImgWrapper {
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    
+        .bannerImgWrapper::before {
+            border-right: 2px solid white;
+            height: 67.5%;
+            margin-bottom: auto;
+            content: '';
+            display: block;
+            left: 26rem;
+            top: -0.8rem;
+            position: absolute;
+        }
+    
+        .bannerImgWrapper::after {
+            content: '';
+            border-top: 2px solid white;
+            width: 31.5%;
+            display: block;
+            position: absolute;
+            left: 17.3rem;
+            top: -0.8rem;
+        }
+    
+        .bannerImgWrapper {
+            width: 70%;
+            position: relative;
+        }
+    
+        .playBtn {
+            position: absolute;
+            top: 45%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .heroLeft h2 {
+            width: 100%;
+            line-height: 1.5;
+        }
+    
+        .heroLeft p {
+            width: 50%;
+        }
+    
+        .heroRight {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column: 3;
+        }
+    
+        .heroRight img {
+            width: 100%;
+            height: 70%;
+        }
+    
+        @media(min-width:1900px) {
+            .bannerImgWrapper::before {
+                height: 63.25%;
+                left: 95%;
+                height: 62.5%;
+                top: -1.5rem;
+            }
+    
+            .bannerImgWrapper::after {
+                width: 40.5%;
+                left: 55%;
+                top: -1.5rem;
+            }
+        }
+    
+        @media (min-width: 1520px) and (max-width:1899px) {
+            .bannerImgWrapper::before {
+                height: 60.4%;
+                left: 95%;
+                top: -1.25rem;
+            }
+    
+            .bannerImgWrapper::after {
+                top: -1.25rem;
+                left: 62%;
+                width: 33%;
+            }
+        }
+    
+        @media (min-width:1440px) and (max-width:1520px) {
+            .bannerImgWrapper::before {
+                width: 9.5%;
+                height: 59.45%;
+                top: -1.25rem;
+                left: 25rem;
+            }
+    
+            .bannerImgWrapper::after {
+                left: 18.5rem;
+                top: -1.25rem;
+            }
+        }
+    
+        @media (min-width: 1440px) {
+            .heroLeft div:first-child {
                 flex: 1 0 49%;
             }
-        
+    
             .heroLeft span {
                 display: block;
             }
-        
+    
             .heroLeft span::before {
                 width: 53%;
                 top: -30%;
                 left: -4.5%;
             }
-    }
-
-    @media (max-width: 1388px) and (min-width: 991px) {
-        .bannerImgWrapper::before{
-            left: 94%;
+        }
+    
+        @media (max-width: 1388px) and (min-width: 991px) {
+            .bannerImgWrapper::before {
+                left: 94%;
+            }
+    
+            .bannerImgWrapper::after {
+                width: 30.5%;
+                left: 63.85%;
+            }
+        }
+    
+        @media (max-width:1185px) {
+            .heroLeft span {
+                display: block;
+            }
+    
+            .heroLeft span::before {
+                left: 4.5%;
+                width: 64%;
+            }
+        }
+    
+        @media (max-width:990px) {
+            .heroRight {
+                display: none;
+            }
+    
+            .heroLeft {
+                width: 100%;
+                flex-direction: column-reverse;
+                padding-top: 6rem;
+                row-gap: 1rem;
+            }
+    
+            .heroLeft div:first-child {
+                padding-bottom: 0;
+                flex: 1 0 52%;
+            }
+    
+            .BannerImg {
+                flex: 0 1 48%;
+            }
+    
+            .BannerImg img {
+                width: 90%;
+            }
+    
+            .bannerImgWrapper::before,
+            .bannerImgWrapper::after {
+                display: none;
+            }
+    
+            .heroLeft p {
+                width: 100%;
+            }
+    
+            /* .playBtn {
+                top: 23%;
+                left: 35%;
+            } */
+    
+            .headerTop {
+                display: none;
+            }
+    
+            .header {
+                height: inherit;
+                justify-content: space-between;
+                align-items: center;
+                grid-column-end: 4;
+            }
+    
+            .headerLogo {
+                flex: 1 1 30%;
+            }
+    
+            .headerLogo img {
+                max-width: 100%;
+            }
+    
+            .dNav {
+                flex: 1 0 70%;
+            }
+    
+            .headerBottom {
+                margin-left: auto;
+            }
+    
+            .headerBottom .navbar {
+                margin-left: auto;
+            }
+    
+            .navbar-toggler-icon {
+                height: 1.25rem;
+                width: 1.25rem;
+            }
+    
+            .customCarouselControl-next {
+                left: 8% !important;
+            }
+        }
+    
+        @media (max-width:767px) {
+    
+            .bannerWrapper {
+                display: block;
+            }
+    
+            .header {
+                padding-bottom: 0;
+            }
+    
+            .BannerImg::before,
+            .BannerImg::after {
+                display: none;
+            }
+    
+            .heroLeft span {
+                display: block;
+                font-size: 2.8rem;
+            }
+    
+            .BannerImg {
+                left: 0;
+            }
+    
+            .BannerImg img {
+                width: 100%;
+            }
+    
+            .playBtn {
+                top: 30%;
+                left: 37.5%;
+            }
+    
+            .heroLeft {
+                padding: 2rem;
+                flex-direction: column-reverse;
+            }
         }
 
-        .bannerImgWrapper::after{
-            width: 30.5%;
-            left: 63.85%;
-        }
-    }
-
-    @media (max-width:1185px) {
-        .heroLeft span{
-            display: block;
-        }
-
-        .heroLeft span::before{
-            left: 4.5%;
-            width: 64%;
-        }
-    }
-
-    @media (max-width:990px) {
-        .heroRight {
-            display: none;
-        }
-
-        .heroLeft {
-            width: 100%;
-        }
-
-        .heroLeft div:first-child {
-            padding-bottom: 0;
-            flex: 1 0 52%;
-        }
-
-        .BannerImg {
-            flex: 0 1 48%;
-            left: 2rem;
-        }
-
-        .BannerImg img {
-            width: 90%;
-        }
-
-        .bannerImgWrapper::before, .bannerImgWrapper::after {
-            display: none;
-        }
-
-        .heroLeft p {
-            width: 100%;
-        }
-
-        .playBtn {
-            top: 23%;
-            left: 35%;
-        }
-
-        .headerTop {
-            display: none;
-        }
-
-        .header {
-            height: inherit;
-            justify-content: space-between;
-            grid-column-end: 4;
-        }
-
-        .headerLogo {
-            flex: 1 1 30%;
-        }
-
-        .headerLogo img {
-            max-width: 100%;
-        }
-
-        .dNav {
-            flex: 1 0 70%;
-        }
-
-        .headerBottom {
-            margin-left: auto;
-        }
-
-        .headerBottom .navbar {
-            margin-left: auto;
-            text-align: right;
-        }
-
-        .navbar-toggler-icon {
-            height: 1.25rem;
-            width: 1.25rem;
-        }
-    }
-
-    @media (max-width:767px){
-
-        .bannerWrapper{
-            display: block;
-        }
-
-        .header{
-            padding-bottom: 0;
-        }
-
-        .BannerImg::before, .BannerImg::after {
-            display: none;
-        }
-
-        .heroLeft span{
-            display: block;
-            font-size: 2.8rem;
-        }
-
-        .BannerImg {
-            left: 0;
-        }
-        .BannerImg img {
-            width: 100%;
-        }
-        .playBtn {
-            top: 30%;
-            left: 37.5%;
-        }
-
-        .heroLeft {
-            padding: 2rem;
-            flex-direction: column-reverse;
-        }
-    }
-
+    
 /* Banner Section Ends */
 
 /* Bubble Animation */
@@ -1176,7 +1196,6 @@ body{
         align-content: center;
         text-align: center;
         padding: 2rem 1rem;
-        transition: 1s ease;
         height: 31.5rem;
         border: 1px solid #f8c205;
     }
@@ -1189,7 +1208,6 @@ body{
         text-align: left;
     }
 
-   
     .pricingCard .card-body .list-group-item{
         display: flex;
     }
@@ -1230,20 +1248,17 @@ body{
         padding-top: 7.5rem;
         border: none;
         box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        transition: 1s ease;
     }
-
     .pricingCard .card-footer{
         transition: all 0.7s ease;
     }
-
     .pricingCard:hover .card-footer{
         transform: translateY(-130%);
     }
-
     .pricingCard:hover .list-group{
         display: none;
     }
-
     .pricingCard:hover .buyPack{
         display: block;
         padding-top: 1rem;

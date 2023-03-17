@@ -11,3 +11,15 @@ navBtn.forEach((button) => {
     tabList.classList.remove("slideIn");
   });
 });
+
+var cylceCarousel = [$(".BannerImg .carousel")];
+
+$(document).ready(function () {
+  cylceCarousel.forEach((cycle) => {
+    cycle.carousel({
+      interval: 100,
+    });
+
+    cycle.carousel("cycle");
+  });
+});
